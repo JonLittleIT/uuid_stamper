@@ -7,7 +7,6 @@ class CoreExtTest < ActiveSupport::TestCase
   
   def test_to_uniq_is_36_chars_longer_than_original
     uniq_length =  "1234567890".length + 36
-    
     assert_equal "1234567890".to_uniq.length.to_i,  uniq_length
   end
   
