@@ -10,8 +10,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Max Groenlund"]
   s.email       = ["max@synthmax"]
   s.homepage    = "http://synthmax.dk"
-  s.summary     = "TODO: Summary of UuidStamper."
-  s.description = "TODO: Description of UuidStamper."
+  s.summary     = "Add a uuid stamp at the end of a string."
+  s.description = "Implement act_as_uuid_stamper."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
