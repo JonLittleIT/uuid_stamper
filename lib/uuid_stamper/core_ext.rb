@@ -9,7 +9,8 @@ String.class_eval do
   
   # remove uuid
   def from_uniq
-    "#{self.slice -36, self.length}" 
+    #original_length = self.length - 36
+    "#{self.slice 0, self.length - 36}" 
   end
   
 end

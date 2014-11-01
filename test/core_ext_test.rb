@@ -14,8 +14,7 @@ class CoreExtTest < ActiveSupport::TestCase
   def test_from_uniq_is_equal_to_original
     original_str = 'Rocking and Roling'
     uniq_str     = original_str.to_uniq
-    
-    assert_not_equal original_str, uniq_str.from_uniq
+    assert_equal original_str, uniq_str.from_uniq
   end
 
   

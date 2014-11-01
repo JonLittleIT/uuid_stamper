@@ -1,3 +1,6 @@
 = UuidStamper
 
 This project rocks and uses MIT-LICENSE.
+
+Usage
+gem 'uuid_stamper', git: 'git://github.com/maxgronlund/uuid_stamper.git'
