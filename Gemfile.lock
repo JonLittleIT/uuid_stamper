@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    uuid_stamper (0.0.1)
+    uuid_stamper (0.0.3)
       rails (~> 4.1.7)
       uuidtools
 
