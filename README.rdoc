@@ -1,5 +1,7 @@
 = UuidStamper
 
+Tested with rails 4.2.1 should work with rails 5
+
 If you are working with pagination on a pages
 And you want to sort them on e.g. Rating and many records holds the same value for rating
 Then you can't rely on what the database throw back at you when you ask for a batch on pages
