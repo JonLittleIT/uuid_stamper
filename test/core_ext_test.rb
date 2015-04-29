@@ -5,8 +5,8 @@ class CoreExtTest < ActiveSupport::TestCase
     assert_not_equal "Rocking Around...", "Rocking Around...".to_uniq
   end
   
-  def test_to_uniq_is_36_chars_longer_than_original
-    uniq_length =  "1234567890".length + 36
+  def test_to_uniq_is_37_chars_longer_than_original
+    uniq_length =  "1234567890".length + 37
     assert_equal "1234567890".to_uniq.length.to_i,  uniq_length
   end
   
