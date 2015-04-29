@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.email       = ["max@synthmax"]
   s.homepage    = "http://synthmax.dk"
   s.summary     = "Add a uuid stamp at the end of a string."
-  s.description = "Implement act_as_uuid_stamper."
+  s.description = "Use when you paginate pages with not uniq identifiers."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]

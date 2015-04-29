@@ -15,6 +15,20 @@ class CoreExtTest < ActiveSupport::TestCase
     uniq_str     = original_str.to_uniq
     assert_equal original_str, uniq_str.from_uniq
   end
+  
+  def test_fixnum_converts_to_uniq_string
+    original_fixnum = 123
+    uniq_str     = original_fixnum.to_s.to_uniq
+    assert_equal original_fixnum, uniq_str.from_uniq.to_i
+  end
+  
+
+  
+  def test_float_converts_to_uniq_string
+    original_fixnum = 123
+    uniq_str     = original_fixnum.to_s.to_uniq
+    assert_equal original_fixnum, uniq_str.from_uniq.to_i
+  end
 
   
 end
