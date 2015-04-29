@@ -23,6 +23,8 @@ UNIQIFYED_STRING = SOME_NOT_UNIQ_STRING.to_uniq
 Turn the same string back to whas it was before for viewing on the screen
 SOME_NOT_UNIQ_STRING = UNIQIFYED_STRING.from_uniq
 
+Don't use from_uniq on Fixum and Float use plain old Ruby .to_i or to_f
+
 Example solving the problem
 cake.rating = params[:rating].to_uniq
 Then the pagination will work
