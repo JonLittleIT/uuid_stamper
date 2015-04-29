@@ -1,6 +1,28 @@
 = UuidStamper
 
-This project rocks and uses MIT-LICENSE.
+If you are working with pagination on a pages
+And you want to sort them on e.g. Rating and many records holds the same value for rating
+Then you can't rely on what the database throw back at you when you ask for a batch on pages
+
+Without uuis_stamper this will not be relyable
+@cakes = Cake.order(:rating).page(params[:page]).per(32))
+
+Notice you can also use it with numbers if you store them in the db as strings
 
 Usage
+
+Add to gemfile
 gem 'uuid_stamper', git: 'git://github.com/maxgronlund/uuid_stamper.git'
+
+
+Uniqifying a string/number
+UNIQIFYED_STRING = SOME_NOT_UNIQ_STRING.to_uniq
+
+Turn the same string back to whas it was before for viewing on the screen
+SOME_NOT_UNIQ_STRING = UNIQIFYED_STRING.from_uniq
+
+Example solving the problem
+cake.rating = params[:rating].to_uniq
+Then the pagination will work
+@cakes = Cake.order(:rating).page(params[:page]).per(32))
+
