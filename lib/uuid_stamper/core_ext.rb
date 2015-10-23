@@ -5,12 +5,13 @@ String.class_eval do
   require "uuidtools"
   # add uuid
   def to_uniq
-    num_chars_to_prepend = 1000000000000000000 - self.length
+    num_chars_to_prepend = 16 - self.length
     s = ''
-    num_chars_to_prepend.to_s.each_char do |char|
+    (0..num_chars_to_prepend).each do |i|
       s << '0'
     end
-    s + "#{self}"  + '-|@|-' +  UUIDTools::UUID.timestamp_create().to_s
+
+    s + self  + '-|@|-' +  UUIDTools::UUID.timestamp_create().to_s
   end
   
   # remove uuid
